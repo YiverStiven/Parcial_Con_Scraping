@@ -3,11 +3,8 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     // console.log(__dirname)
-    res.render("index", {titulo : "mi titulo dinámico"})
+    res.render("index", {titulo : "Inicio de App"})
 })
 
-router.get('/servicios', (req, res) => {
-    res.render("servicios", {tituloServicios: "Este es un mensaje dinámico de servicios"})
-})
 
 module.exports = router;
