@@ -1,0 +1,38 @@
+<%- include("template/cabecera", {tituloWeb: 'Página de computadores'}) %>
+
+    <div class="container">
+
+        <h1>Lista de computadores en Amazon y Ktronix</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% arrayPc1.forEach(pc => { %>
+                    <tr>
+                        <td>
+                            <%= pc.Nombre %>
+                        </td>
+                        <td>
+                            <%= pc.Precio %>
+                        </td>
+                    </tr>
+                    <% }) %>
+                        <% arrayPc2.forEach(pc => { %>
+                            <tr>
+                                <td>
+                                    <%= pc.Nombre %>
+                                </td>
+                                <td>
+                                    <%= pc.Precio %>
+                                </td>
+                            </tr>
+                            <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+    <%- include("template/footer") %>
